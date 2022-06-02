@@ -33,10 +33,10 @@ else:
 #Initialize a variable and assign a jackpot number of your choice from 1 to 10
 JackpotNumber=6
 
-#Ask the user to guess a number and store it in a variable
+#Ask the user to guess the jackpot number and store it in a variable
 inpNumber=input("Enter a number to check you guess")
 
-#convert the guessed number to an integer
+#convert the guessed jackpot number to an integer
 inpNumber=int(inpNumber)
 
 #Add an if condition to check if the guessed number is equal to the jackpot number and print a message accordingly
