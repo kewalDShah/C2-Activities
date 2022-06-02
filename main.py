@@ -31,7 +31,7 @@ else:
 #LEARN ABOUT OPERATORS(==, <,>) 
   
 #Initialize a variable and assign a jackpot number of your choice from 1 to 10
-number=6
+JackpotNumber=6
 
 #Ask the user to guess a number and store it in a variable
 inpNumber=input("Enter a number to check you guess")
@@ -40,13 +40,13 @@ inpNumber=input("Enter a number to check you guess")
 inpNumber=int(inpNumber)
 
 #Add an if condition to check if the guessed number is equal to the jackpot number and print a message accordingly
-if(inpNumber==number):
+if(inpNumber==JackpotNumber):
   print("You have done it. You got the exact number")
 
 #Add a elif condition to check if the guessed number is greater than the jackpot number and print a message accordingly
-elif(inpNumber>number):
+elif(inpNumber>JackpotNumber):
   print("You have guessed too high number")
 
 #Add an elif condition to check if the guessed number is less than the jackpot number and print a message accordingly
-elif(inpNumber<number):
+elif(inpNumber<JackpotNumber):
   print("You have guessed too small number")
