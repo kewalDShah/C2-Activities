@@ -9,20 +9,20 @@ print(friends)
 #print specific value
 print(friends[0])
 
-#ask one more friend to add in the list
+#ask one more friend's name to add to the list
 oneMoreFriend=input("Enter one friend name which you want to add to the list: ")
 
-#add the newly asked friend name to the list
+#Add the name of the newly asked friend to the list.
 friends.append(oneMoreFriend)
 
-#print list of subject using variable
+#print list of friends using variable
 print(friends)
 
 #Learn about if-conditions
-#Condition to check if your name in list
+#Add a condition to check if the name of your best friend is in the list
 if("Joy" in friends):
   
-  #print a string to inform about friend's name is there in list
+  #Print a message to inform the user that the best friend's name is in the list of friends
   print("Your name is there in the list")
   
 #Else condtion if frined's name not in list
@@ -33,35 +33,29 @@ else:
 
 #Learn about operators
 #______________What is Operators (==, <,>)
-#Initialize a variable and assign a number of your choice from 1-10
+  
+#Initialize a variable and assign a number of your choice from 1 to 10
 number=6
-#Condition
 
+#ask for an input from the user for a number
+inpNumber=input("Enter a number to check you guess")
 
+#convert the input of number to an integer
+inpNumber=int(inpNumber)
 
+#Add a condition to check if the guessed number is greater than the number in the game
+if(inpNumber>number):
 
-if (password=="letsCode"):
-  #print the string to authenticate the access
-  print("You have been granted access")
-#add a else condition for password not matching
-else:
-  #Print a string to mention password incorrect
-  print("Password incorrect")
+  #print the message that user guessed too high number
+  print("You have guessed too high number")
 
+#Add an elif condition to check if the guessed number is less than the number in the game.
+elif(inpNumber<number):
 
-#Activity 2:
-#__________What are comparision operators (<,>)
-# ask the user age
-age = int(input("Enter your age to check eligiblity for U16 football ?"))
-#check if the age is greater than 16
-if(age>16):
-  #print a message to say user cannot is not eligible
-  print("You cant be selected as you are age don't match the criteria")
-#add a elif condition to check age less than 14
-elif(age<14):
-  #print message to inform the user is very young for eligiblity
-  print("You are too young try next year")
-#add a else condition to inform for selection round
-else:
-  #print the message that the user is eligible for selection
-  print("You are eligble for selection round")
+  #print the message that user guessed too small number
+  print("You have guessed too small number")
+
+#Add an elif condition to check if the guessed number is equal to the number in the game
+elif(inpNumber==number):
+  #print the message that guessed numnber is correct
+  print("You have done it. You got the exact number")
